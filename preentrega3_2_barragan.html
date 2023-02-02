@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>decoManiax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="preentrega3_barragan.css" type="text/css">
+        <!--REALIZADO CON EL CDN DE BOOTSTRAP 4 QUE ES LO QUE ESTUDIE-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-dark navbar-expand-sm" style='background-color: #1C2331;'>
+            <a href="#" class="logo navbar-brand">decoManiax</a>          
+            
+        </nav>
+        <main role="main">
+        <div class="row" style="padding-top: 30px;">
+            <div class="col-md-5">                
+                    <div class="row justify-content-center">
+                        <h5>RESUMEN DE LA COMPRA</h5>                        
+                    </div>
+                                                                       
+                    <div class="row" style="padding-left: 10px;">                                    
+                        <table  class="table table-striped" id="contenido_carrito" style="background-color: white;">
+                                                                                        
+                        </table>                                    
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="total_carrito">
+
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="row justify-content-center">
+                    <h5>DATOS DEL COMPRADOR</h5>                        
+                </div>
+                <form action="#" method="post" style="padding: 0 20px;">
+                    <fieldset class="form-group">
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" class="form-control" name="nombre" id="nombre" required>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="mail">Email</label>
+                        <input type="email" class="form-control" name="mail" id="mail" required>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="tel">Teléfono</label>
+                        <input type="tel" class="form-control" name="tel" id="tel" pattern="[0-9]">
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="pagos">Opciones de pago</label>
+                        <select class="form-control" name="pagos" id="pagos">
+
+                        </select>
+                    </fieldset>
+                    
+                    <div class="tarjeta-pago">
+                        <img class="chip" src="img/chip.svg">
+                        <br>
+                        <input type="text" class="form-control" name="bandamagnetica" id="bandamagnetica" readonly style="background-color: black;">
+                        <br>
+                        <input type="number" class="form-control" name="numtarjeta" id="numtarjeta" pattern="[0-9]" placeholder="Número de la tarjeta" style="width: 90%; margin: 0 2%;" required>
+                        <br>
+                        <div class="form-inline">
+                            <input type="text" class="form-control" name="caducidad" id="caducidad" placeholder="Vto. XX/XX" style="width: 30%; margin: 0 2%;" required>
+                            <br>
+                            <input type="number" class="form-control" name="cvv" id="cvv" pattern="[0-9]" placeholder="CVV" style="width: 30%; margin: 0 2%;" required>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="row justify-content-center">
+                        <img src="img/payments.png" style="margin: 10px;">
+                    </div>
+                    <button class="btn btn-outline-primary btn-lg" style="margin: 20px;" id="btn_pagar"><a href="preentrega3_3_barragan.html">Pagar</a></button>
+                    
+                    
+                </form>
+            </div>
+        </div>
+        
+        </main>
+
+        <footer class="fb-bgoscuro">
+            <p class="footer">decoManiax&copy; Todos los derechos reservados. Las imágenes utilizadas fueron sacadas de la tienda Leroy Merlín en España.</p>
+        </footer>
+        
+        <script src="preentrega3_2_barragan.js"></script>
+    </body>
+</html>

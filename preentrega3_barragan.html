@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>decoManiax</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="preentrega3_barragan.css" type="text/css">
+        <!--ENLAZADO CON CDN A BOOTSTRAP 4 (ES LO QUE TENGO ESTUDIADO)-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-dark navbar-expand-sm d-flex justify-content-between" style='background-color: #1C2331;'>
+            <a href="#" class="logo navbar-brand">decoManiax</a>
+            <div id="carrito">
+                <ul class='navbar-nav ml-auto'>
+                    <li><span class='badge badge-pill badge-info float-right' id="carrito_pill">0</span></li>
+                    <li class="nav-item h2"><a class="nav-link" href="#" data-toggle="modal" data-target="#ventanamodal"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <main role="main">
+            <div class="container-fluid fb-seccion fb-bglight inicio">
+                <div class="titulo-div">
+                    <h1 class="titulo" id='inicio'>Bienvenidos a <span class="logo">decoManiax</span></h1>
+                    <p>la mejor tienda para decorar tu hogar!</p>
+                </div>
+            </div>
+
+            <div class="container-fluid pt-5">
+                <div class="row px-xl-5 pb-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center border mb-4" style="height: 100px; padding: 30px;">
+                            <h1 class="fa fa-check text-primary m-0 mr-3"></h1>
+                            <h5 class="font-weight-semi-bold m-0">Máxima calidad</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center border mb-4" style="height: 100px; padding: 30px;">
+                            <h1 class="fa fa-shipping-fast text-primary m-0 mr-2"></h1>
+                            <h5 class="font-weight-semi-bold m-0">Envío gratis</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center border mb-4" style="height: 100px; padding: 30px;">
+                            <h1 class="fas fa-exchange-alt text-primary m-0 mr-3"></h1>
+                            <h5 class="font-weight-semi-bold m-0">Garantía extendida</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                        <div class="d-flex align-items-center border mb-4" style="height: 100px; padding: 30px;">
+                            <h1 class="fa fa-phone-volume text-primary m-0 mr-3"></h1>
+                            <h5 class="font-weight-semi-bold m-0">Sporte 24/7</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid fb-seccionplus fb-bgoscuro">
+                <div class="row">
+                    
+                <aside class="col-lg-3 col-md-3">
+                    <div style="background-color: rgba(137, 191, 236, 0.85);">
+                        <h6 class="titulo-filtro">Buscar artículos</h6>
+                        <div>
+                            <input type="search" name="buscar" id="buscar" class="form-control border" placeholder="Buscar...">
+                        </div>
+                    </div>                    
+                </aside>
+
+            <div class="col-lg-9 col-md-9">
+                <div class="row d-flex flex-wrap justify-content-center" id="tarjetas">
+                    
+                </div> 
+            </div>
+                
+                </div>
+            </div>
+        </main>
+
+        <footer class="fb-bgoscuro">
+            <p class="footer">decoManiax&copy; Todos los derechos reservados. Las imágenes utilizadas fueron sacadas de la tienda Leroy Merlín en España.</p>
+        </footer>
+        
+        <div class="modal fade" id="ventanamodal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modalestilo">
+                    <div class="modal-header">
+                        <h5>RESUMEN DE LA COMPRA</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                                                   
+                                <div class="row">                                    
+                                        <table  class="table table-striped" id="contenido_carrito" style="background-color: white">
+                                                                                        
+                                        </table>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12" id="total_carrito">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto mr-auto"><button class="btn btn-outline-primary" id="btn_restart" data-dismiss="modal">Volver a comenzar</button></div>
+                                    <div class="col-auto"><button class="btn btn-outline-primary" id="btn_pago">Proceder al pago</button></div>                                   
+                                </div>                        
+                                                    
+                    </div>
+                    <div class="modal-footer mx-auto d-block">
+                        <i class="fas fa-thumbs-up"></i> Visítanos en:
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a> / 
+                        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a> / 
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="preentrega3_barragan.js"></script>
+    </body>
+</html>
